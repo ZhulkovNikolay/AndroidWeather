@@ -6,5 +6,5 @@ public interface GreetingStrings {
     String getAfternoon();
     String getEvening();
     String getNight();
-    String getWeather();
+    String getUserHelp();
 }

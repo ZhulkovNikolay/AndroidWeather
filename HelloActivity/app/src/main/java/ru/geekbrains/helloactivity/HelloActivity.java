@@ -1,13 +1,19 @@
 package ru.geekbrains.helloactivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
-// Наследуем класс Activity или его потомка
 public class HelloActivity extends AppCompatActivity implements GreetingStrings {
 
-    // Этот метод вызывается при создании Activity
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,8 +22,22 @@ public class HelloActivity extends AppCompatActivity implements GreetingStrings 
         BuilderGreetingPhrase builderGreetingPhrase =
                 new BuilderGreetingPhrase(this);
 
-        TextView greeting = findViewById(R.id.greeting);    // Получить элемент
-        greeting.setText(builderGreetingPhrase.get());      // Заменить значение
+        TextView greeting = findViewById(R.id.greeting);
+        greeting.setText(builderGreetingPhrase.get());
+
+        Button button = findViewById(R.id.button);
+        button.setOnClickListener(new StartSecondActivity(this));
+    }
+
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.button:
+                Intent intent = new Intent(this, SecondActivity.class);
+                startActivity(intent);
+                break;
+                default:
+                    break;
+        }
     }
 
     @Override
@@ -46,7 +66,7 @@ public class HelloActivity extends AppCompatActivity implements GreetingStrings 
     }
 
     @Override
-    public String getWeather() {
-        return "Сегодня жара +30С";
+    public String getUserHelp() {
+        return getResources().getString(R.string.userHelp);
     }
 }
