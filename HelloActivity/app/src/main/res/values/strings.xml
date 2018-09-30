@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Погода</string>
+    <string name="greeting">Hello GeekBrains!</string>
+    <string name="helloer">GeekBrains</string>
+    <string name="morning">Good morning</string>
+    <string name="afternoon">Good afternoon</string>
+    <string name="evening">Good evening</string>
+    <string name="night">Good night</string>
+    <string name="activity_main">Activity Main!</string>
+    <string name="activity_second">Activity Second!</string>
+    <string name="to_second">Далее</string>
+    <string name="to_back">Назад</string>
+    <string name="weatherStatement">Сегодня жара +30С</string>
+    <string name="userHelp">Введите ваш город, чтобы узнать погоду</string>
+</resources>
