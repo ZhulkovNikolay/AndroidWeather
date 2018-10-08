@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Погода</string>
+    <string name="greeting">Привет ГикБрейнс!</string>
+    <string name="helloer">ГикБрейнс</string>
+    <string name="morning">Доброе утро</string>
+    <string name="afternoon">Добрый день</string>
+    <string name="evening">Добрый вечер</string>
+    <string name="night">Доброй ночи</string>
+    <string name="activity_main">Главная Активити!</string>
+    <string name="activity_second">Вторая Активити!</string>
+    <string name="to_second">Далее</string>
+    <string name="to_back">Назад</string>
+    <string name="weatherStatement">Сегодня жара +30С</string>
+    <string name="userHelp">Введите название города</string>
+</resources>
