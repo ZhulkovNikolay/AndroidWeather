@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="greeting">Hello GeekBrains!</string>
+    <string name="helloer">GeekBrains</string>
+    <string name="morning">Good morning</string>
+    <string name="afternoon">Good afternoon</string>
+    <string name="evening">Good evening</string>
+    <string name="night">Good night</string>
+    <string name="activity_main">Activity Main!</string>
+    <string name="activity_second">Activity Second!</string>
+    <string name="to_second">Next</string>
+    <string name="to_back">Back</string>
+    <string name="weatherStatement">Today is hot +30С</string>
+    <string name="userHelp">Input town title</string>
+</resources>
